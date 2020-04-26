@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Integrated Fast Financial Aid · IFFA | European Comission</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-item ec-logo">
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/European_Commission.svg" /> -->
+            <img src="static/logo_covidbusters.png" />
+        </div>
+        <div class="grid-item content">
+            <p class="service-title">Integrated Fast Financial Aid · IFFA</p>
+            <h1>Request Financial Support</h1>
+            <p>Enter your VAT number and your Passport ID to verify.</p>
+            <form method="post">
+                <div class="form-input-container">
+                    <p class="form-label">VAT Number</p>
+                    <input class="form-input" type="text" name="number" />
+                </div>
+                <div class="form-input-container">
+                    <p class="form-label">Passport ID</p>
+                    <input class="form-input" type="text" />
+                </div>
+                <input class="form-button" type="submit" value="Check Eligibility">
+            </form>
+
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

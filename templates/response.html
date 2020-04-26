@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en_AU" xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+	<meta name="Keywords" content="customs,taxation,VAT,european union,eu" />
+	<meta name="publisher" content="Taxation and Customs Union"/>
+	<meta name="creator" content="COMM/DG/TAXUD" />
+	<link type="text/css" rel="stylesheet" href="static/index.css" media="all" />
+
+	<title>Apply for financial help</title>
+</head>
+<body>
+<div id="header">
+	<img alt="European Commission logo" id="banner-flag" src="static/logo_covidbusters.png" />
+	<p id="banner-title-text">Integrated Fast Financial Aid (IFFA)</p>
+<p id="banner-title-text">Integrated Fast Financial Aid (IFFA)</p>
+</div>
+
+<a id="top-page" name="top-page"></a>
+<div id="layout" class="layout">
+<h2>Your response for your Financial Support Request</h2>
+<p> Your financal support is granted. </p>
+<table border="1" cellspacing="1">		
+            {% for key in data %}
+	    <tr>
+	    <td>{{ key  }}</td>
+            <td>{{ data[key] }}</td>
+            </tr>
+            {% endfor %}
+</table>
+
+    <br class="clear" />
+    
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layout-footer">
+	This is mock.
+</div>
+
+
+</div>
+
+</body>
+</html>

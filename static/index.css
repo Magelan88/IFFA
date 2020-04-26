@@ -1,0 +1,6 @@
+#header{position:relative;z-index:10;min-height:145px;background-color:#fff;line-height:1.4;}
+	#banner-flag{position:absolute;left:40px;top:15px;z-index:8;color:#000;width:172px;height:119px;}
+	#header #banner-title-text{margin:0;border:0;font-size:24px;line-height:1.2;padding-left:240px;position:absolute;top:65px;color:#000;}
+	#header #banner-title-text span{display:block;font-size:18px;}
+	#banner-image-right{position:absolute;right:0;top:38px;z-index:7;height:107px;width:210px;}
+	#banner-image-title{position:absolute;left:0;top:0;height:145px;width:100%;z-index:6;background-repeat:no-repeat;background-position:0 0;}

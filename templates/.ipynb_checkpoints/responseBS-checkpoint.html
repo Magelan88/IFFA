@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Integrated Fast Financial Aid · IFFA | European Comission</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-item ec-logo">
+            <img src="static/logo_covidbusters.png" />
+        </div>
+        <div class="grid-item content">
+            <p class="service-title">Integrated Fast Financial Aid · IFFA</p>
+            <h1>Your Financial Support Response</h1>
+
+            <div class="funds-info">
+                <img class="funds-icon" src="{{ url_for('static',filename='recieve.svg') }}" />
+                <div class="col">
+                    <p>{{answer}}</p>
+                    <!--
+                    <h2 class="info-headline">You will recieve <span class="money">€ 380.00</span></h2>
+                    <p class="small">The amount will be transfered to your account.</p>
+                    -->
+                </div>
+            </div>
+
+            <h3>Decision</h3>
+            <ul class="decision">
+                {% for step in path %}
+                    <li class="decision-step">
+                        <p class="decision-header">
+                            <span class="decision-count">{{loop.index}}</span>
+                            {{ step }}
+                        </p>
+                    </li>
+                {% endfor %}
+                
+                <!--
+                <li class="decision-step">
+                    <p class="decision-header">
+                        <span class="decision-count">1</span>
+                        I’m a simple reason
+                    </p>
+                </li>
+                <li class="decision-step">
+                    <p class="decision-header">
+                        <span class="decision-count">2</span>
+                        I’m a complex reason headline
+                    </p>
+                    <p class="decision-body">M need to be explained in one or two sentences. I need to be explained in
+                        one or two sentences. </p>
+                </li>
+                -->
+            </ul>
+            <h3>Personal Data</h3>
+            <ul class="personal-data">
+                {% for dat in data %}
+                    <li>
+                        <p class="data-key">{{dat}}</p>
+                        <p class="data-value">{{data[dat]}}</p>
+                    </li>
+                {% endfor %}                
+                
+                <!--
+                <li>
+                    <p class="data-key">Name</p>
+                    <p class="data-value">Mr. Hector Ellis</p>
+                </li>
+                <li>
+                    <p class="data-key">Address</p>
+                    <p class="data-value">165 Sutton Parkways<br />
+                        North Jessicaport OK 52<br />
+                        Wellington, UK</p>
+                </li>
+                <li>
+                    <p class="data-key">VAT ID</p>
+                    <p class="data-value data-value-numeric">12993882112</p>
+                </li>
+                <li>
+                    <p class="data-key">key</p>
+                    <p class="data-value data-value-numeric">numeric value 123</p>
+                </li>
+                <li>
+                    <p class="data-key">key</p>
+                    <p class="data-value">alphanumeric value (default)</p>
+                </li>
+                -->
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
